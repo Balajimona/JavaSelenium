@@ -25,6 +25,7 @@ public class stepDefinition {
 	public void user_enter_username_and_password() {
 		WebElement txtPass = driver.findElement(By.id("email"));
 		txtPass.sendKeys("bala@123");
+		System.out.println("repo demo");
 
 	}
 
@@ -32,13 +33,16 @@ public class stepDefinition {
 	public void user_should_click_login_button() {
 		WebElement btnLogin = driver.findElement(By.name("login"));
 		btnLogin.click();
+		System.out.println("git repo demo");
 
 	}
 
 	@Then("user validate home page")
 	public void user_validate_home_page() {
 		System.out.println("Invalid Username");
+		System.out.println("Git repo demo");
 	}
+	
 
 
 }
